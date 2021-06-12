@@ -1,9 +1,9 @@
-const EventPageSlug = () => {
+const FilteredEventPage = () => {
     return (
         <div>
-            <h1>Event Page Slug</h1>
+            <h1>Filtered Events Page</h1>
         </div>
     )
 }
 
-export default EventPageSlug
+export default FilteredEventPage
