@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import classes from './event-item.module.css';
 
 const EventItem  = props => {
 
@@ -12,19 +13,25 @@ const EventItem  = props => {
     const formattedAddress = location.replace(', ', '\n'); //replaces comma with new line
 
     return (
-        <li>
-           <img src={"/" + image} alt={title} />
+        <li className={classes.item}>
+           <img 
+            className={classes.image}
+            src={"/" + image} 
+            alt={title} 
+            />
             <div>
-                <div>
-                    <h2>{title}</h2>
-                    <div>
+                <div className={classes.content}>
+                    <h2 >{title}</h2>
+                    <div className={classes.date}>
                         <time>{humanReadableDate}</time>
                     </div>
-                    <div>
-                        <address>{location}</address>
+                    <div className={classes.address}>
+                        <address>{formattedAddress}</address>
                     </div>
                 </div>
+                <div className={classes.actions}>
                     <Link href={`/events/${id}`}>Explore Event</Link>
+                </div>
             </div>
         </li>
     )
