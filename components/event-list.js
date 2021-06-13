@@ -3,7 +3,7 @@ import classes from './event-list.module.css';
 
 const EventList = ({events}) => 
     (
-        <ul>
+        <ul className={classes.list}>
             {events.map( event => (
                 <EventItem 
                     title={event.title} 
