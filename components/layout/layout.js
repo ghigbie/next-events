@@ -1,9 +1,9 @@
-import Header from './main-header';
+import MainHeader from './main-header';
 
 const Layout = ({ children }) => {
     return (
         <>
-            <Header/>
+            <MainHeader/>
             <main>
                 {children}
             </main>
@@ -11,4 +11,4 @@ const Layout = ({ children }) => {
     )
 }
 
-export default layout
+export default Layout

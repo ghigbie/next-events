@@ -8,7 +8,6 @@ const List = () => {
      const featuredEvents = getFeaturedEvents();
     return (
         <div>
-            <h1>List All Events</h1>
             <EventList events={featuredEvents} />
         </div>
     )
