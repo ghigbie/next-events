@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { getFeaturedEvents } from '../dummy-data';
-import EventList from  './../components/event-list';
+import EventList from  './../components/events/event-list';
 
 const Home = () => {
   const featuredEvents = getFeaturedEvents();

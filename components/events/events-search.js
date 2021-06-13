@@ -1,4 +1,4 @@
-import Button from './ui/button';
+import Button from '../ui/button';
 import classes from './events-search.module.css'
 
 const EventsSearch = () => {
@@ -21,8 +21,9 @@ const EventsSearch = () => {
                 {months.map((month,index) => <option value={index+1}>{month}</option>)}
                 </select>
             </div>
+            <Button>Find Events</Button>
         </form>
     )
 }
 
-export default events-search
+export default EventsSearch;

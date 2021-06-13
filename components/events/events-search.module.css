@@ -61,6 +61,7 @@
 
   .control select {
     width: 100%;
+    min-width: 120px;
   }
 
   .form button {
